@@ -39,10 +39,6 @@ a {
     color: blue;
 }
 
-p a, li a {
-    text-decoration: underline;
-}
-
 img {
     width: 640px;
     max-width: 100%;
