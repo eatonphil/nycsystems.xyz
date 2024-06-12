@@ -15,6 +15,7 @@ body {
     font-family: var(--sans-serif);
     width: 600px;
     max-width: 100%;
+    margin-bottom: 100px;
 }
 
 body > a {
