@@ -17,8 +17,17 @@ body {
     max-width: 100%;
 }
 
+body > a {
+    margin-top: 50px;
+    display: block;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--serif);
+}
+
+h2 {
+    margin-top: 100px;
 }
 
 p, li, p a {
@@ -45,6 +54,10 @@ img {
     max-width: 100%;
 }
 
+img.profile {
+    width: 200px;
+}
+
 table {
     width: 100%;
     border: 1px solid #ddd;
@@ -62,5 +75,13 @@ th, td {
     body {
 	margin: 15px;
 	max-width: calc(100% - 30px);
+    }
+
+    h2 {
+	margin-top: 45px;
+    }
+
+    body > a {
+	margin-top: 20px;
     }
 }
