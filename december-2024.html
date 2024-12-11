@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>December 2024 Talks | NYC Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+  </head>
+  <body>
+    <a href="/">NYC Systems</a>
+
+    <h1>December 19, 2024 Talks</h1>
+
+    <p>
+      We are excited to announce the sixth night of talks in the NYC
+      Systems series, and the final night of 2024! Talks are agnostic
+      of language, framework, operating system, etc. And they are
+      focused on engineering challenges, not product pitches.
+    </p>
+
+    <p>
+      We are pleased to have Jacob Aronoff and Nikhil Benesch speak,
+      and glad to have Trail of Bits as a partner for the venue.
+    </p>
+
+    <p>RSVP <a href="https://forms.gle/LjUZWkhFjsVWkrqt8">here</a>.</p>
+
+    <h2>Designing an Agent Management Protocol for Observability</h2>
+
+    <img class="profile" src="/assets/jacob.jpeg" />
+
+    <p>
+      Jacob Aronoff is a principal engineer at the newly-founded
+      company <a href="https://www.omlet.co/">Omlet</a>. Jacob is a
+      maintainer of the OpenTelemetry project, specifically for
+      the <a href="https://github.com/open-telemetry/opentelemetry-operator">Operator</a>
+      and <a href="https://github.com/open-telemetry/opentelemetry-helm-charts">Helm
+      Charts</a> and is involved in the development of
+      the <a href="https://github.com/open-telemetry/opentelemetry-collector">Collector</a>, <a href="https://github.com/open-telemetry/opamp-spec">OpAMP</a>,
+      Kubernetes semantic conventions. Jacob has worked at Lightstep
+      and DataDog focused on building observability tools.
+    </p>
+
+    <ul>
+      <li><a href="https://www.linkedin.com/in/jaronoff97">LinkedIn</a></li>
+      <li><a href="https://github.com/jaronoff97">GitHub</a></li>
+      <li><a href="https://bsky.app/profile/jaronoff.com">Bluesky</a></li>
+    </ul>
+
+    <h3>Talk info</h3>
+
+    <p>
+      Agents are ubiquitous in modern architectures—observability
+      agents, in particular, run on everything from bare metal to
+      Kubernetes to serverless environments like Lambda. Some large
+      enterprises deploy more than a dozen different observability
+      agents, each sending data to a variety of vendors. How can SRE
+      and DevOps teams effectively manage and understand the health
+      and topology of their deployed agents? What challenges arise in
+      modern observability deployment practices?
+    </p>
+    <p>
+      In this talk, you’ll learn about the hurdles of running agents at
+      scale and how the OpenTelemetry project is working to simplify and
+      standardize the management of observability agents. We’ll also explore
+      the tradeoffs involved in designing a generic agent management
+      protocol and discuss potential future improvements.
+    </p>
+
+    <h2>Advancing the frontier of data freshness</h2>
+
+    <img class="profile" src="/assets/nikhil.jpeg" />
+
+    <p>
+      Nikhil Benesch is cofounder and CTO at Materialize. Over the
+      past six years, he's been responsible for bugs in nearly every
+      component of Materialize. Previously, Nikhil worked on the
+      replication engine for CockroachDB and (briefly) did research on
+      another streaming dataflow system called Noria.
+    </p>
+
+    <ul>
+      <li><a href="https://www.linkedin.com/in/nikhilbenesch/">LinkedIn</a></li>
+      <li><a href="https://bsky.app/profile/benesch.bsky.social">Bluesky</a></li>
+      <li><a href="https://github.com/benesch">GitHub</a></li>
+    </ul>
+
+    <h3>Talk info</h3>
+
+    <p>
+      Think of Materialize as a new type of Postgres read replica that
+      uses differential dataflow to incrementally maintain the results
+      of arbitrary SQL queries, even complex queries involving
+      multi-way joins and aggregations. By pairing this incremental
+      computation engine with a consistency scheme called real-time
+      recency, Materialize can answer (sufficiently complex) queries
+      faster than the primary Postgres server that it's connected to,
+      while providing the same level of data freshness as if you had
+      queried the primary directly—i.e., reads from Materialize are
+      guaranteed to reflect the results of all writes committed to the
+      primary. In this talk, I'll explain how Materialize unlocked
+      this surprising new frontier in data freshness.
+    </p>
+  </body>
+</html>
