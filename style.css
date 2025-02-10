@@ -1,5 +1,5 @@
 :root {
-    --serif: "Merriweather", "Georgia", serif;
+    --serif: serif;
     --sans-serif: sans-serif;
     --mono: "IBM Plex Mono", monospace;
 }
