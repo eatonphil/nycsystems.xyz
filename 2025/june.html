@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>April 2025 Talks | NYC Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+  </head>
+  <body>
+    <a href="/">NYC Systems</a>
+
+    <h1>June 18th, 2025 Talks</h1>
+
+    <p>
+      We are excited to announce the third night of talks in the NYC
+      Systems series! Talks are agnostic of language, framework, operating
+      system, etc. And they are focused on engineering challenges, not
+      product pitches.
+    </p>
+
+    <p>
+      We are pleased to have Haikal Ryclova-Pribadi + Joshua Send and
+      Joe Cutler speak, and glad to have Trail of Bits as a partner
+      for the venue.
+    </p>
+
+    <h2>Validating and Optimizing Database Queries with Types</h2>
+
+    <img class="profile" src="/assets/haikal.jpg" />
+
+    <p>
+      Haikal is a computer scientist and the Founder and CEO of
+      TypeDB. His work began in robotics in collaboration with NASA
+      JPL, and at the University of Cambridge. Today, Haikal and his
+      team in London work on building TypeDB: a new database that
+      brings the power of programming languages to the database.
+    </p>
+
+    <ul>
+      <li><a href="https://www.linkedin.com/in/haikalpribadi/">LinkedIn</a></li>
+    </ul>
+
+    <img class="profile" src="/assets/joshuasend.png" />
+
+    <p>
+      Joshua is the Head of Engineering at TypeDB. He started his
+      journey in Computer Science at the University of Cambridge, and
+      continued to work on building TypeDB, and lead the development
+      of TypeDB 3.0.
+    </p>
+
+    <ul>
+      <li><a href="https://www.linkedin.com/in/joshua-send/">LinkedIn</a></li>
+    </ul>
+
+    <h3>Talk info</h3>
+
+    <p>
+      It can be very easy to write bugs in SQL or NoSQL queries as
+      they get complex, as databases are not yet as good at validating
+      correctness as a programming languages do.
+    </p>
+
+    <p>
+      As programmers, we're used to reaching for strongly typed
+      languages when correctness and performance are paramount, but
+      databases have no such option. By introducing types in database
+      query languages, we found ourselves catching entirely new classes
+      of query issues, including semantic ones, as well as inefficient
+      possible query plans.
+    </p>
+
+    <p>
+      By leveraging principles from a modern branch of mathematics,
+      Type Theory, we were able to introduce a rich and highly
+      expressive type system, bringing the benefits of programming
+      languages to the database. User-defined types, variables,
+      functions, sophisticated type checking, and much more, now
+      become available to us at the database.
+    </p>
+
+    <p>
+      We will share with you in this talk, how we blend programming
+      language design, compiler technology, and more traditional
+      database operations, to build the ultimate database for
+      programmers.
+    </p>
+
+    <h2>Fail Faster: Staging and Fast Randomness for High-Performance Property-Based Testing</h2>
+
+    <img class="profile" src="/assets/jcutler.jpg" />
+
+    <p>
+      Joe Cutler is a 5th year PhD student at the University of
+      Pennsylvania, advised by Benjamin Pierce. Joe does research in
+      programming languages and compilers, usually focused on topics
+      related to type systems or functional programming. Outside of
+      work, Joe spends far too much time running.
+    </p>
+
+    <ul>
+      <li><a href="https://x.com/alpha_convert">Twitter</a></li>
+      <li><a href="https://bsky.app/profile/alphaconvert.bsky.social">BlueSky</a></li>
+      <li><a href="https://www.linkedin.com/in/joseph-cutler-a65a08138/">LinkedIn</a></li>
+    </ul>
+
+    <h3>Talk info</h3>
+
+    <p>
+      Property-based testing (PBT) relies on generators of random test
+      cases. The effectiveness of PBT depends critically on the speed
+      of these generators: the faster data is generated, the faster
+      properties can fail, and the faster bugs can be found. However,
+      careful measurements show that the generator performance of
+      widely used PBT libraries falls well short of what is possible,
+      due principally to (1) the abstraction overhead of their
+      combinator-heavy style and (2) suboptimal sources of
+      randomness. We characterize, quantify, and address these
+      bottlenecks.
+    </p>
+
+    <p>
+      To eliminate abstraction overheads, we propose a technique based
+      on multi-stage programming, dubbed Allegro. We apply this
+      technique to leading generator libraries in OCaml and Scala 3,
+      significantly improving performance. To quantify the performance
+      impact of the randomness source, we carry out a controlled
+      experiment, replacing the randomness in the OCaml PBT library
+      with an optimized version. Both interventions exactly preserve
+      the semantics of generators, enabling precise, pointwise
+      comparisons. Together, these improvements find bugs up to 13×
+      faster in our benchmark suite.
+    </p>
+  </body>
+</html>
