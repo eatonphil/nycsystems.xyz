@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>June 2025 Talks | NYC Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+  </head>
+  <body>
+    <a href="/">NYC Systems</a>
+
+    <h1>June 18th, 2025 Talks</h1>
+
+    <p>
+      We are excited to announce the third night of talks in the NYC
+      Systems series! Talks are agnostic of language, framework, operating
+      system, etc. And they are focused on engineering challenges, not
+      product pitches.
+    </p>
+
+    <p>
+      We are pleased to have Haikal Vahab Jabrayilov and
+      Oz Katz speak, and glad to have Trail of Bits as a partner
+      for the venue.
+    </p>
+
+    <h2>Bringing virtualized environments closer to bare-metal performance</h2>
+
+    <img class="profile" src="/assets/vahab.jpeg" />
+
+    <p>
+      Vahab Jabrayilov is a Computer Science PhD student at Columbia
+      University, advised by Professor Kostis Kaffes. He specializes
+      in performance optimization for computer systems, focusing on
+      designing scheduling solutions across end-host, rack, and
+      cluster scales to minimize microsecond-scale tail latency. More
+      recently, his work has expanded to include accelerating machine
+      learning systems.
+    </p>
+
+    <ul>
+      <li><a href="https://www.linkedin.com/in/vjabrayilov/">LinkedIn</a></li>
+    </ul>
+
+    <h3>Talk info</h3>
+
+    <p>
+      Modern cloud applications need microsecond-level responsiveness,
+      yet current virtualization approaches often cause
+      millisecond-scale delays. This talk presents two complementary
+      solutions that bring virtualized environments closer to
+      bare-metal performance.
+    </p>
+    <p>
+      First, Machnet is a userspace network stack designed for public
+      clouds. Rather than relying on specialized NIC features
+      unavailable in virtual NICs, Machnet uses a “Least Common
+      Denominator” approach and a microkernel design to support
+      flexible execution models. It achieves substantial latency and
+      CPU efficiency gains, demonstrating 80% lower latency and 75%
+      lower CPU utilization for a key-value store compared to today’s
+      best solutions.
+    </p>
+    <p>
+      Second, Rorke is a microsecond-scale VM scheduler for
+      oversubscribed cloud environments. By approximating processor
+      sharing at the host and dynamically adapting time slices, Rorke
+      cuts tail latency by over 10× for popular low-latency
+      workloads—without harming throughput in non-oversubscribed
+      scenarios. Together, Rorke and Machnet bring virtualized
+      infrastructure closer than ever to bare-metal levels of
+      performance, setting a new standard for cloud computing
+      efficiency.
+    </p>
+
+    <h2>Git Semantics, Data Lake Scale: Fast Branching Over Billions of Objects</h2>
+
+    <img class="profile" src="/assets/ozkatz.jpeg" />
+
+    <p>
+      Oz Katz is the CTO and co-founder of lakeFS, the open source
+      platform bringing Git-like version control to petabyte-scale data
+      lakes. Previously, Oz led Data and Infrastructure as VP R&D at
+      SimilarWeb (NYSE: SMWB), scaling systems to handle internet-wide
+      analytics. Oz joined SimilarWeb through its acquisition of Swayy, a
+      content analytics startup he co-founded.
+    </p>
+    <p>
+      With deep expertise in distributed systems and data
+      infrastructure, Oz is passionate about making data and AI
+      engineering as agile and collaborative as software development.
+    </p>
+
+    <ul>
+      <li><a href="https://www.linkedin.com/in/oz-katz-4b3b389/">LinkedIn</a></li>
+    </ul>
+
+    <h3>Talk info</h3>
+
+    <p>
+      In Git, branching is instant and merging scales with your
+      changes - not the size of your repository.  Now imagine those
+      same guarantees applied to petabytes of data and billions of
+      objects.
+    </p>
+    <p>
+      This talk shows how lakeFS brings Git-like semantics to massive
+      data lakes, delivering constant-time branching and atomic
+      commits directly on cloud object storage.  We'll dive into the
+      metadata structures, commit algorithms, and concurrency controls
+      that make it possible - as well as examine the trade-offs and
+      engineering decisions behind achieving "Git-speed" at planetary
+      scale.
+    </p>
+    </p>
+  </body>
+</html>
