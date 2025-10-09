@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>October 2025 Talks | NYC Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+  </head>
+  <body>
+    <a href="/">NYC Systems</a>
+
+    <h1>October 16th, 2025 Talks</h1>
+
+    <p>
+      We are excited to announce the fifth night of talks in the NYC
+      Systems series! Talks are agnostic of language, framework, operating
+      system, etc. And they are focused on engineering challenges, not
+      product pitches.
+    </p>
+
+    <p>
+      We are pleased to have Jacopo Tagliabue and
+      Samy Al Bahra speak, and glad to have Trail of Bits as a partner
+      for the venue.
+    </p>
+
+    <h2>Speedrunning the Lakehouse</h2>
+
+    <img class="profile" src="/assets/jacopo.jpg" />
+
+    <p>
+      <a href="https://jacopotagliabue.it/">Jacopo Tagliabue</a> is the co-founder and CTO of Bauplan. Educated
+      in several acronyms across the globe (UNISR, SFI, MIT), Jacopo
+      was co-founder and CTO of Tooso, an AI startup acquired by
+      TSX:CVO in 2019. He led Coveo's AI from scale-up to IPO, and
+      built out Coveo Labs, a prolific R&D practice whose libraries,
+      models and datasets have garnered tens of millions of downloads.
+    </p>
+
+    <p>
+      Throughout his career, he has been fortunate enough to collaborate with incredible folks in industry and academia (e.g. Netflix, NVIDIA, Stanford, Univ. of Wisconsin-Madison), and publish contributions in a variety of fields: Information Retrieval (RecSys, SIGIR), Data Science (KDD), Artificial Intelligence and NLP (ICML, NAACL), Data Management (SIGMOD, VLDB), Computer Systems (Middleware). While building his new company, he is teaching ML Systems at NYU, which is mostly notable because it is the only job he ever had that his parents understand.
+    </p>
+
+    <ul>
+      <li><a href="https://x.com/jacopotagliabue">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/jacopotagliabue/">LinkedIn</a></li>
+    </ul>
+
+    <h3>Talk info</h3>
+
+    <p>
+      The lakehouse architecture has become a foundational design for
+      modern data and AI workloads. But this flexibility comes at a
+      cost: users and system developers must navigate multiple APIs,
+      conflicting abstractions, and overlapping execution models. What
+      if we started from scratch? In this talk, we discuss the
+      technical challenges of building a "Function-as-a-Service"
+      (FaaS) lakehouse. We argue that existing FaaS platforms were
+      never designed for data-intensive workflows.
+    </p>
+    <p>
+      To address this, we built a new system from the ground up using
+      object storage and open formats. Re-purposing lessons from
+      OpenLambda, we deploy functions up to 15× faster than AWS
+      Lambda. By extending Apache Iceberg’s isolation with Git-like
+      primitives, we support multi-language transactions with formal
+      correctness proofs. We conclude by emphasizing the role of
+      user-facing APIs for adoption in real-world settings, and
+      sharing late-breaking results from our ongoing research.
+    </p>
+
+    <h2>Incomplete by Design: The Limitations of Event-Based Detection</h2>
+
+    <img class="profile" src="/assets/samy.jpeg" />
+
+    <p>
+      Samy Al Bahra is the co-founder of BitBison, focused on
+      infrastructure, cybersecurity, and machine learning for
+      systems-level data. Over the past two decades, he has worked
+      across high performance computing, firm real-time systems and
+      large scale infrastructure, working on everything from operating
+      system kernels to mail servers and distributed web
+      applications. His career began with a deep passion for systems
+      security, which continues to guide his work today.
+    </p>
+    <p>
+      Before
+      founding BitBison, Samy co-founded Backtrace, where he helped
+      build next-generation developer tooling, OLAP databases and
+      large-scale observability systems for customers such as Amazon
+      and Roblox. Samy started Concurrency Kit, an open-source library
+      that advanced multicore scalability in systems such as the
+      FreeBSD kernel and is widely deployed across finance,
+      infrastructure and networking. Much earlier in his career, he
+      worked on proprietary kernel-level system hardening and
+      high-performance network capture technology for FreeBSD.
+    </p>
+
+    <ul>
+      <li><a href="https://www.linkedin.com/in/samy-a-83264628/">LinkedIn</a></li>
+    </ul>
+
+    <h3>Talk info</h3>
+
+    <p>
+      This talk traces the evolution of intrusion detection and prevention from early HIDS to modern EDR through the technologies, trade-offs and research that shaped them including academic efforts toward full system visibility. Though the focus will be on Linux, these problems and concepts apply to other operating systems which we will briefly touch on. We will examine real-world deployments, their limitations and a few production horror stories.
+
+    </p>
+    <p>
+      BPF now underpins most modern EDR and CNAPP solutions but it introduces architectural constraints and subtle failure modes that remain largely unaddressed. We will take a close look at BPF internals, fundamental performance properties and explore these weaknesses with concrete examples both familiar and new.
+    </p>
+
+    <p>
+      In academia it is well established that full system provenance provides a stronger foundation for the future of endpoint detection yet it remains impractical due to performance bottlenecks in compute and storage. Even if made efficient, applying provenance to real-time security enforcement raises open challenges beyond forensics. I will close with early but promising results from ongoing work that make these and new ideas practical at production scale.
+    </p>
+  </body>
+</html>
