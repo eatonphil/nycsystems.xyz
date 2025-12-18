@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>December 2025 Talks | NYC Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+  </head>
+  <body>
+    <a href="/">NYC Systems</a>
+
+    <h1>December 18th, 2025 Talks</h1>
+
+    <p>
+      We are pleased to have Larry Diehl and Jeff Swenson speak, and
+      glad to have Trail of Bits as a partner for the venue.
+    </p>
+
+    <h2>Turning Dafny Sets into Sequences</h2>
+
+    <img class="profile" src="/assets/larry.jpg" />
+
+    <ul>
+      <li><a href="https://x.com/larrytheliquid">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/larrytheliquid/">LinkedIn</a></li>
+    </ul>
+
+    <h3>Talk info</h3>
+
+    <p>
+      Many programmers have come across ideas related to modeling software using tools like TLA+, but fewer are familiar with proving software correct using theorem provers. This talk is about Dafny, a tool that allows you to prove the correctness of programs, while syntactically appearing like an ordinary programming language. Not only that, but you can actually compile your verified programs to most popular languages and then run them!
+    </p>
+
+    <p>
+      While the tutorials and basics of Dafny allow you to get up to speed quickly, we'll look deeper to understand that although Dafny appears to be a single language, it's actually made up of several internal languages. Each internal language has different use cases and tradeoffs related to specification versus modeling versus implementation. With all this as background, the talk will end by showing how to convert Dafny sets into sequences, which seems like a basic enough task, but is surprisingly involved because Dafny verification happens via SMT solving.
+    </p>
+
+    <h2>Cheating the CAP Theorem</h2>
+
+    <img class="profile" src="/assets/jeff.jpg" />
+
+    <p>
+      Jeff Swenson is a Senior Staff Software Engineer. He spent his first three years at Cockroach Labs as the tech lead for CockroachDB Serverless: a pay-per-usage, multi-tenant deployment of CockroachDB. That time was spent working on system reliability, cold start performance, and closing the feature gap between the single-tenant and multi-tenant flavors of CockroachDB. Last year he switched focus to disaster recovery and has been working on backup/restore and cross-cluster replication.
+    </p>
+
+    <ul>
+      <li><a href="https://www.linkedin.com/in/jeff-swenson-72262512b/">LinkedIn</a></li>
+    </ul>
+
+    <h3>Talk info</h3>
+
+    <p>
+      A common interpretation of the CAP theorem is that it's not possible to avoid cross-region latency in multi-region consistent systems. This talk will focus on different ways it is possible to cheat the CAP theorem and avoid paying a latency penalty in a CP database. The talk will use the real world use case of optimizing cold starts in CockroachDB Serverless.
+    </p>
+    <p>
+      Cockroach Labs introduced a serverless version of the database in 2020. An important operational property of Serverless is that an idle tenant cluster can cold-start and be ready to serve SQL queries in less than a second. This talk covers changes to CockroachDB that were made to allow starting SQL servers in a multi-region Serverless cluster with no blocking dependency on cross-region operations.
+    </p>
+  </body>
+</html>
