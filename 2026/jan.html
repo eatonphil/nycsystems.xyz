@@ -22,5 +22,106 @@
       We are pleased to have Yihao Sun and Peter Boncz speak, and
       glad to have Trail of Bits as a partner for the venue.
     </p>
+
+    <h2>Journey to GPU Datalog Engines</h2>
+
+    <img class="profile" src="/assets/yihao.jpg" />
+
+    <p>
+      Yihao Sun is a PhD candidate in Computer Science at Syracuse
+      University, advised by Prof. Kristopher Micinski. His research
+      attempts to lowers the barrier to parallel computing in data
+      intensive domains by unifying Programming Languages, High
+      Performance Computing and Database. He worked on Datalog, a
+      declarative query language increasingly used in PL and AI and
+      extend it both semantically and architecturally to support
+      advanced analyses and scalable execution on GPUs and distributed
+      systems. His work spans: (1) high performance Datalog engines
+      for HPC, (2) semantic extensions for static analysis and
+      neurosymbolic reasoning, and (3) a unifying framework
+      reconciling fragmented Datalog features. Several research papers
+      appear in VLDB, NeurIPS, ASPLOS, CLUSTER, and AAAI and his code
+      have been deployed and tested at DOE’s supercomputers.
+    </p>
+
+    <ul>
+      <li><a href="https://www.linkedin.com/in/ysun67/">LinkedIn</a></li>
+    </ul>
+
+    <h3>Talk info</h3>
+
+    <p>
+      Datalog has seen renewed interest for program analysis and
+      neuro-symbolic AI in recent years. Scaling Datalog engines to
+      support large input datasets for real-world program analysis
+      tasks is performance critical. GPUs offer massive parallelism
+      and high memory bandwidth, but their SIMT execution model
+      conflicts with Datalog's recursive, irregular computation
+      patterns. In this talk, I present our journey building GPU
+      Datalog engines, the core challenges we faced and the solutions
+      we developed.
+    </p>
+    <p>
+      I begin with the background knowledge for GPU programming
+      paradigm and Datalog's performance bottle neck and introduce the
+      motivation for running Datalog on GPU. I then describe our
+      published work, GDlog and VFlog, which use materialized binary
+      joins with fine-tuned GPU data structures. This approach is a
+      natural fit for GPU bulk operations and achieves high throughput
+      for merging but suffers from intermediate result explosion and
+      struggles to scale for large Datalog projects like DDisasm. I
+      then introduce our ongoing work on SRDatalog, a compiler-based
+      engine that generates specialized GPU kernels for worst-case
+      optimal joins using an iterator-based approach. I conclude with
+      lessons learned and open challenges in adapting worst-case
+      optimal algorithms to GPU architectures.
+    </p>
+
+    <h2>Vector Search on Columnar Storage</h2>
+
+    <img class="profile" src="/assets/boncz.jpg" />
+
+    <p>
+      Peter Boncz holds appointments as tenured researcher at CWI
+      and professor at VU University Amsterdam. His academic
+      background is in database systems, with the open-source
+      column-store MonetDB the outcome of his PhD. He has a track
+      record in bridging the gap between academia and commercial
+      application, founding multiple startups. In 2008 he co-founded
+      Vectorwise around the analytical database system by the same
+      name, which pioneered vectorized query execution, and
+      lightweight data compression; which have been adopted broadly in
+      analytical database systems. Recent work to make data
+      (de)compression data-parallel and AI/GPU-friendly led to the
+      FastLanes data format. In recent years he has collaborated
+      closely with both Databricks and with MotherDuck — a startup
+      that is connecting DuckDB to the cloud. DuckDB originates from
+      the Database Architectures research group, which he leads at CWI
+      (the Amsterdam research institute where also python was
+      created).
+    </p>
+
+    <ul>
+      <li><a href="https://www.linkedin.com/in/peterboncz/">LinkedIn</a></li>
+    </ul>
+
+    <h3>Talk info</h3>
+
+    <p>
+      Managing vector data entails storing, updating, and searching
+      collections of large and multi-dimensional pieces of data. Some
+      believe that this justifies the creation of a new class of data
+      systems specialized for this. Others would contend that such
+      systems would eventually need to provide services provided by
+      database system, including e.g., transaction management,
+      role-based access control, and integration of vector search
+      predicates in complex queries. Recent research (PDX - Partition
+      Dimension Across) has shown that already highly optimized
+      vector search kernels can profit from columnar storage. This
+      talk gives a sneak preview of our ongoing work in this area,
+      including optimized vector ingest, tailored vector indexing, and
+      integrated evaluation of queries and vector predicates in the
+      DuckDB system.
+    </p>
   </body>
 </html>
