@@ -36,7 +36,10 @@
       declarative query language increasingly used in PL and AI and
       extend it both semantically and architecturally to support
       advanced analyses and scalable execution on GPUs and distributed
-      systems. His work spans: (1) high performance Datalog engines
+      systems.
+    </p>
+    <p>
+      His work spans: (1) high performance Datalog engines
       for HPC, (2) semantic extensions for static analysis and
       neurosymbolic reasoning, and (3) a unifying framework
       reconciling fragmented Datalog features. Several research papers
@@ -69,8 +72,10 @@
       joins with fine-tuned GPU data structures. This approach is a
       natural fit for GPU bulk operations and achieves high throughput
       for merging but suffers from intermediate result explosion and
-      struggles to scale for large Datalog projects like DDisasm. I
-      then introduce our ongoing work on SRDatalog, a compiler-based
+      struggles to scale for large Datalog projects like DDisasm.
+    </p>
+    <p>
+      I then introduce our ongoing work on SRDatalog, a compiler-based
       engine that generates specialized GPU kernels for worst-case
       optimal joins using an iterator-based approach. I conclude with
       lessons learned and open challenges in adapting worst-case
@@ -91,14 +96,16 @@
       Vectorwise around the analytical database system by the same
       name, which pioneered vectorized query execution, and
       lightweight data compression; which have been adopted broadly in
-      analytical database systems. Recent work to make data
-      (de)compression data-parallel and AI/GPU-friendly led to the
-      FastLanes data format. In recent years he has collaborated
-      closely with both Databricks and with MotherDuck — a startup
-      that is connecting DuckDB to the cloud. DuckDB originates from
-      the Database Architectures research group, which he leads at CWI
-      (the Amsterdam research institute where also python was
-      created).
+      analytical database systems.
+    </p>
+    <p>
+      Recent work to make data (de)compression data-parallel and
+      AI/GPU-friendly led to the FastLanes data format. In recent
+      years he has collaborated closely with both Databricks and with
+      MotherDuck — a startup that is connecting DuckDB to the
+      cloud. DuckDB originates from the Database Architectures
+      research group, which he leads at CWI (the Amsterdam research
+      institute where also python was created).
     </p>
 
     <ul>
@@ -115,13 +122,15 @@
       systems would eventually need to provide services provided by
       database system, including e.g., transaction management,
       role-based access control, and integration of vector search
-      predicates in complex queries. Recent research (PDX - Partition
-      Dimension Across) has shown that already highly optimized
-      vector search kernels can profit from columnar storage. This
-      talk gives a sneak preview of our ongoing work in this area,
-      including optimized vector ingest, tailored vector indexing, and
-      integrated evaluation of queries and vector predicates in the
-      DuckDB system.
+      predicates in complex queries.
+    </p>
+    <p>
+      Recent research (PDX - Partition Dimension Across) has shown
+      that already highly optimized vector search kernels can profit
+      from columnar storage. This talk gives a sneak preview of our
+      ongoing work in this area, including optimized vector ingest,
+      tailored vector indexing, and integrated evaluation of queries
+      and vector predicates in the DuckDB system.
     </p>
   </body>
 </html>
