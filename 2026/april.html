@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>April 2026 Talks | NYC Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+  </head>
+  <body>
+    <a href="/">NYC Systems</a>
+
+    <h1>April 15th, 2026 Talks</h1>
+
+    <p>
+      We are excited to announce the first night of talks in the NYC
+      Systems series in 2026! Talks are agnostic of language,
+      framework, operating system, etc. And they are focused on
+      engineering challenges, not product pitches.
+    </p>
+
+    <p>
+      We are pleased to have Sean Allen and Yining Shi speak, and
+      glad to have Trail of Bits as a partner for the venue.
+    </p>
+
+    <h2>GC Made Fast</h2>
+
+    <p>
+      Sean T. Allen is a founding member of the Pony core team and
+      currently works at Antithesis. His turn-ons include programming
+      languages, distributed computing, Hiwatt amplifiers, and Fender
+      Telecasters. His turn-offs include mayonnaise and stirring
+      yogurt.
+    </p>
+
+    <ul>
+      <li><a href="https://www.linkedin.com/in/sean-t-allen-has-a-posse/">LinkedIn</a></li>
+    </ul>
+
+    <h3>Talk info</h3>
+
+    <p>
+      Most engineers think garbage collection is slow. They're not wrong
+      about their experience — stop-the-world collectors really do destroy
+      your tail latencies. But "GC is slow" confuses the symptom with the
+      cause. The real villain is coordination. Every stop-the-world pause,
+      every atomic reference count, every lock-free reclamation scheme is
+      coordination over memory, and coordination is what kills performance.
+    </p>
+    <p>
+      Pony takes a different path. Actors own their own heaps. Each actor
+      collects independently, using only local knowledge. No
+      stop-the-world. Ever. When actors need to share information about
+      cross-actor references, they gossip — piggybacking on the application
+      messages they're already sending. They share information but never
+      wait for agreement to act.
+    </p>
+    <p>
+      This isn't magic and it isn't free. But the costs are local, not
+      coordination costs. And that changes everything about what "fast GC"
+      can mean.
+    </p>
+
+    <h2>Real-Time at Scale: Building the Inference Infrastructure Behind Runway Characters</h2>
+
+    <img class="profile" src="/assets/yining.png" />
+
+    <p>
+      Yining Shi is Senior Director of Applications and a founding engineer at Runway, where she has spent nearly seven years building the products and infrastructure behind AI-powered generative video. She is also an adjunct professor at NYU Tisch, where she teaches Machine Learning for the Web, and the author of Make: Jumpstarting the Arduino 101 (O'Reilly).
+    </p>
+
+    <ul>
+      <li><a href="https://www.linkedin.com/in/peterboncz/">LinkedIn</a></li>
+    </ul>
+
+    <h3>Talk info</h3>
+
+    <p>
+      This talk covers how Runway engineered the infrastructure
+      required to run generative video models in real time — from
+      model optimization techniques to the serving architecture that
+      makes mutli-step low-latency inference possible. Yining will
+      walk through the specific constraints of real-time avatar
+      generation and the tradeoffs the team navigated, as well as show
+      a live demo of Runway Characters.
+    </p>
+  </body>
+</html>
