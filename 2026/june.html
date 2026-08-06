@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>June 2026 Talks | NYC Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+  </head>
+  <body>
+    <a href="/">NYC Systems</a>
+
+    <h1>June 18th, 2026 Talks</h1>
+
+    <p>
+      We are excited to announce the third night of talks in the NYC
+      Systems series in 2026! Talks are agnostic of language,
+      framework, operating system, etc. And they are focused on
+      engineering challenges, not product pitches.
+    </p>
+
+    <p>
+      We are pleased to have Olivia Gallucci and Doug Patti speak, and
+      glad to have Trail of Bits as a partner for the venue.
+    </p>
+
+    <h2>AI-Assisted Vulnerability Research on Apple's Operating Systems</h2>
+
+    <p>
+      Olivia Gallucci is a security engineer at Datadog, where her work
+      surrounds macOS internals, reverse engineering, and user-space
+      research. She previously worked in offensive security at Apple,
+      SECUINFRA, Deloitte, and for the U.S. government.
+    </p>
+    <p>
+      She writes [ret]2read, a monthly newsletter on operating system
+      internals. In her spare time she enjoys sailing, running, and
+      blogging.
+    </p>
+
+    <ul>
+      <li><a href="https://www.linkedin.com/in/olivia-gallucci/">LinkedIn</a></li>
+    </ul>
+
+    <h3>Talk info</h3>
+
+    <p>
+      Apple publishes part of its operating system source, and that
+      partial view is a better starting point for security research
+      than it first appears. This talk walks through operationalizing
+      it: reverse engineering, fuzzing, and vulnerability discovery
+      against a codebase you can only half see.
+    </p>
+    <p>
+      She covers where AI genuinely helps in that workflow &mdash; triaging
+      diffs to find the changes most likely to be exploitable, surfacing
+      private APIs, reasoning about bug classes in IOKit, and deciding
+      where to point a fuzzer across macOS and iOS. She also covers
+      where it does not: incomplete source, legal limits, and the places
+      where an agent will confidently describe code that does not
+      exist.
+    </p>
+    <p>
+      She closes with demonstrations and a blueprint for building
+      agents that can reason about Apple's ecosystem.
+    </p>
+
+    <h2>Building a fast log with a smidge of fault-tolerance</h2>
+
+    <p>
+      Doug Patti has been a developer at Jane Street since 2017,
+      working mostly on distributed systems. He built Concord, a state
+      machine replication system that undergirds Jane Street's client
+      offerings.
+    </p>
+    <p>
+      He now works on its successor, Aria: a low-latency shared message
+      bus with strong ordering and reliability guarantees, which other
+      teams inside Jane Street build resilient systems on top of.
+    </p>
+
+    <ul>
+      <li><a href="">LinkedIn</a></li>
+    </ul>
+
+    <h3>Talk info</h3>
+
+    <p>
+      Jane Street relies heavily on inter-process communication and
+      real-time message passing to drive critical systems, including
+      those that ingest market data and implement trading strategies.
+      As the number of components grows, it gets increasingly hard to
+      say anything confident about the consistency and correctness of
+      the system as a whole.
+    </p>
+    <p>
+      This talk covers the approach Jane Street settled on: put a
+      transaction log at the center, replicate state machines off it,
+      and invert control flow so that application code stops having to
+      reason about data races and process failures on its own. That
+      structure is what Aria is built on.
+    </p>
+    <p>
+      The interesting part is the tension in the title. Fault tolerance
+      is not free, and a log that is fast is not automatically a log
+      you can trust. Doug goes through where those two goals fight,
+      which guarantees are worth paying for, and which ones the team
+      decided to live without.
+    </p>
+  </body>
+</html>
