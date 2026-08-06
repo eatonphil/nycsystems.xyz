@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>August 2026 Talks | NYC Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+  </head>
+  <body>
+    <a href="/">NYC Systems</a>
+
+    <h1>August 20th, 2026 Talks</h1>
+
+    <p>
+      We are excited to announce the fourth night of talks in the NYC
+      Systems series in 2026! Talks are agnostic of language,
+      framework, operating system, etc. And they are focused on
+      engineering challenges, not product pitches.
+    </p>
+
+    <p>
+      We are pleased to have Manya Bansal and Sugu Sougoumarane
+      speak, with a guest lightning talk from Zhenghong Yu, and glad
+      to have Trail of Bits as a partner for the venue.
+    </p>
+
+    <h2>Modular GPU Programming with Typed Perspectives</h2>
+
+    <p>
+      Manya Bansal works on programming languages and compilers for
+      high performance computing. She is a PhD student at MIT,
+      advised by Saman Amarasinghe and Jonathan Ragan-Kelley, where
+      her research centers on helping programmers write fast,
+      low-level GPU code that stays modular, reusable, and correct.
+      Her paper "Modular GPU Programming with Typed Perspectives"
+      received a Distinguished Paper Award at PLDI 2026.
+    </p>
+    <p>
+      Before MIT she studied mathematics at Stanford, receiving her
+      B.S. in 2023, where she worked with Fredrik Kjolstad and Dawson
+      Engler. Her earlier work on lightweight, locality-aware
+      composition of black-box subroutines asked what the minimal
+      ingredients for operator fusion are when you are building on
+      top of existing library interfaces rather than inside a
+      monolithic compiler. She has spoken at CppCon and at Cornell's
+      Programming Languages Discussion Group.
+    </p>
+
+    <ul>
+      <li><a href="">LinkedIn</a></li>
+    </ul>
+
+    <h3>Talk info</h3>
+
+    <p>
+      Modern GPU kernels are written close to the metal, and the
+      performance you get depends on decisions about memory layout,
+      tiling, and synchronization that are difficult to express
+      without giving up on abstraction entirely. The usual outcome is
+      code that is fast and unreusable, or reusable and slow.
+    </p>
+    <p>
+      This talk covers an approach to closing that gap: giving
+      programmers precise control over the hardware while making that
+      control something the type system can check and the programmer
+      can compose. I will walk through where the abstractions in
+      existing GPU programming models break down, what a typed
+      account of the problem buys you, and what it costs.
+    </p>
+
+    <h2>Multigres: Vitess for Postgres</h2>
+
+    <p>
+      Sugu Sougoumarane is Head of Multigres at Supabase and the
+      co-creator of Vitess, the database clustering system he
+      originally built at YouTube to scale MySQL and which now runs
+      behind some of the largest deployments on the internet. He
+      later co-founded PlanetScale around it. He returned from a
+      three-year sabbatical to start Multigres.
+    </p>
+    <p>
+      Multigres is an adaptation of Vitess for PostgreSQL, built as a
+      layered proxy that sits in front of the database: MultiGateway
+      for query routing, MultiPooler for connection pooling, and a
+      high availability system that honors the rules of consensus
+      protocols rather than approximating them. He has written an
+      extended series on generalized consensus and on a more flexible
+      Paxos.
+    </p>
+
+    <ul>
+      <li><a href="https://www.linkedin.com/in/sougou/">LinkedIn</a></li>
+    </ul>
+
+    <h3>Talk info</h3>
+
+    <p>
+      Postgres has become the default choice for a very large number
+      of new systems, and the ceiling everyone eventually hits is the
+      same one: you run out of machine. The options after that are
+      read replicas, application-level sharding, or moving off
+      Postgres, and none of them are good.
+    </p>
+    <p>
+      This talk covers Multigres, which takes the architecture Vitess
+      proved out on MySQL and rebuilds it for the Postgres ecosystem.
+      I will go through the layered proxy design, modeless connection
+      pooling that behaves as though you are connected directly to
+      Postgres, and a relational sharding model that co-locates
+      related data so that entire joins can be pushed into a single
+      shard.
+    </p>
+    <p>
+      Compatibility is the constraint that shapes everything, because
+      it is the thing the Postgres community values most and the
+      thing sharding most wants to take away. I will be honest about
+      which tradeoffs we accepted and which ones we are still
+      arguing about.
+    </p>
+
+    <h2>Lightning talk: LiquidCache</h2>
+
+    <p>
+      Zhenghong Yu recently completed his PhD in the Department of
+      Computer Sciences at the University of Wisconsin&ndash;Madison,
+      advised by Prof. Paris Koutris. His research focuses on
+      database theory and on applying theoretical results to
+      practical system design, alongside a broader interest in
+      operating systems and distributed systems. He received his B.E.
+      from ShanghaiTech University.
+    </p>
+    <p>
+      His recent work includes LiquidCache, a caching layer for
+      disaggregated query engines, and FlowLog, an extensible Datalog
+      engine built around incrementality. He has shown that
+      GPU-accelerated database systems can be both faster and cheaper
+      than their CPU counterparts.
+    </p>
+
+    <ul>
+      <li><a href="https://www.linkedin.com/in/zhenghong-yu-a9bba927a/">LinkedIn</a></li>
+    </ul>
+
+    <h3>Talk info</h3>
+
+    <p>
+      Separating compute from storage makes systems easier to operate
+      and much harder to make fast, because every query now pays for
+      the network. Caching is the obvious answer and the naive
+      version of it wastes most of what it caches.
+    </p>
+    <p>
+      This lightning talk covers LiquidCache, which caches data in a
+      form the query engine can actually use rather than as opaque
+      bytes, and pushes work down into the cache so that less data
+      needs to cross the wire in the first place.
+    </p>
+  </body>
+</html>
