@@ -46,10 +46,6 @@
       Programming Languages Discussion Group.
     </p>
 
-    <ul>
-      <li><a href="">LinkedIn</a></li>
-    </ul>
-
     <h3>Talk info</h3>
 
     <p>
@@ -118,23 +114,17 @@
       arguing about.
     </p>
 
-    <h2>Lightning talk: LiquidCache</h2>
+    <h2>Lightning talk: FlowLog</h2>
 
     <p>
-      Zhenghong Yu recently completed his PhD in the Department of
-      Computer Sciences at the University of Wisconsin&ndash;Madison,
-      advised by Prof. Paris Koutris. His research focuses on
-      database theory and on applying theoretical results to
-      practical system design, alongside a broader interest in
-      operating systems and distributed systems. He received his B.E.
-      from ShanghaiTech University.
-    </p>
-    <p>
-      His recent work includes LiquidCache, a caching layer for
-      disaggregated query engines, and FlowLog, an extensible Datalog
-      engine built around incrementality. He has shown that
-      GPU-accelerated database systems can be both faster and cheaper
-      than their CPU counterparts.
+      Zhenghong Yu is a PhD student in the Department of Computer
+      Sciences at the University of Wisconsin&ndash;Madison, advised
+      by Prof. Paris Koutris. His research focuses on database theory
+      and on applying theoretical results to practical system design,
+      alongside a broader interest in operating systems and
+      distributed systems. He received his B.E. from ShanghaiTech
+      University. His recent work includes FlowLog, an efficient and
+      extensible Datalog engine for static analysis.
     </p>
 
     <ul>
@@ -144,16 +134,20 @@
     <h3>Talk info</h3>
 
     <p>
-      Separating compute from storage makes systems easier to operate
-      and much harder to make fast, because every query now pays for
-      the network. Caching is the obvious answer and the naive
-      version of it wastes most of what it caches.
+      Datalog is a natural fit for static analysis: write down the
+      recursive rules and let the engine figure out how to run them.
+      The problem is that existing systems often force a choice
+      between performance and extensibility&mdash;highly optimized
+      engines are difficult to modify, while more flexible designs
+      can come with substantial overhead.
     </p>
     <p>
-      This lightning talk covers LiquidCache, which caches data in a
-      form the query engine can actually use rather than as opaque
-      bytes, and pushes work down into the cache so that less data
-      needs to cross the wire in the first place.
+      This lightning talk covers FlowLog, a Datalog compiler designed
+      to get both. FlowLog compiles Datalog through an optimized
+      relational representation into dataflow, providing fast and
+      scalable execution while making it possible to extend the same
+      system with incremental computation, performance profiling, and
+      semantics beyond standard Datalog.
     </p>
   </body>
 </html>
