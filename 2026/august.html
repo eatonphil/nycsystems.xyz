@@ -27,41 +27,41 @@
     <h2>Modular GPU Programming with Typed Perspectives</h2>
 
     <p>
-      Manya Bansal works on programming languages and compilers for
-      high performance computing. She is a PhD student at MIT,
-      advised by Saman Amarasinghe and Jonathan Ragan-Kelley, where
-      her research centers on helping programmers write fast,
-      low-level GPU code that stays modular, reusable, and correct.
-      Her paper "Modular GPU Programming with Typed Perspectives"
-      received a Distinguished Paper Award at PLDI 2026.
-    </p>
-    <p>
-      Before MIT she studied mathematics at Stanford, receiving her
-      B.S. in 2023, where she worked with Fredrik Kjolstad and Dawson
-      Engler. Her earlier work on lightweight, locality-aware
-      composition of black-box subroutines asked what the minimal
-      ingredients for operator fusion are when you are building on
-      top of existing library interfaces rather than inside a
-      monolithic compiler. She has spoken at CppCon and at Cornell's
-      Programming Languages Discussion Group.
+      Manya Bansal is a third-year Ph.D. student at MIT. Her research
+      lies at the intersection of programming languages, compilers,
+      and high-performance computing, with a focus on designing
+      programming systems that make GPU programming modular,
+      composable, and efficient. She received Distinguished Paper
+      Awards at PLDI in 2023 and 2026 and was awarded the NVIDIA
+      Graduate Fellowship. She is currently a Member of Technical
+      Staff at humans&amp;, where she has successfully traded Boston
+      winters for San Francisco fog.
     </p>
 
     <h3>Talk info</h3>
 
     <p>
-      Modern GPU kernels are written close to the metal, and the
-      performance you get depends on decisions about memory layout,
-      tiling, and synchronization that are difficult to express
-      without giving up on abstraction entirely. The usual outcome is
-      code that is fast and unreusable, or reusable and slow.
+      To achieve peak performance on modern GPUs, one must balance
+      two frames of mind: issuing instructions to individual threads
+      to control their behavior, while simultaneously tracking the
+      convergence of many threads acting in concert to perform
+      collective operations like Tensor Core instructions. The
+      tension between these two mindsets makes modular programming
+      error prone. Functions that encapsulate collective operations,
+      despite being called per-thread, must be executed
+      cooperatively by groups of threads.
     </p>
     <p>
-      This talk covers an approach to closing that gap: giving
-      programmers precise control over the hardware while making that
-      control something the type system can check and the programmer
-      can compose. I will walk through where the abstractions in
-      existing GPU programming models break down, what a typed
-      account of the problem buys you, and what it costs.
+      In this talk, I will present Prism, a new GPU programming
+      language designed to restore modularity without sacrificing
+      low-level control over collective operations. Prism’s central
+      abstraction is typed perspectives, which encode at the type
+      level the granularity at which a programmer is reasoning about
+      and controlling thread behavior. By making these perspectives
+      explicit, Prism ensures that operations are only executed with
+      an appropriate view of the underlying hardware resources,
+      unlocking compositional GPU programming without compromising
+      performance.
     </p>
 
     <h2>Multigres: Vitess for Postgres</h2>
